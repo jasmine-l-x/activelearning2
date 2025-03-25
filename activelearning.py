@@ -105,10 +105,7 @@ if not os.path.exists(config["pretext_checkpoint"]):
     subprocess.run([
         "python", "simclr.py",
         "--config_env", "configs/env.yml",
-        "--config_exp", "
-
-
-configs/pretext/simclr_cifar10.yml"
+        "--config_exp", "configs/pretext/simclr_cifar10.yml"
     ], check=True)
 else:
     print("Pretrained SimCLR model found.")
